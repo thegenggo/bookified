@@ -12,7 +12,7 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { UploadSchema } from "@/lib/zod"
-import { voiceOptions, voiceCategories, DEFAULT_VOICE } from "@/lib/constants"
+import { voiceOptions, voiceCategories, DEFAULT_VOICE, ACCEPTED_PDF_TYPES, ACCEPTED_IMAGE_TYPES } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 import LoadingOverlay from "@/components/LoadingOverlay"
 import type { BookUploadFormValues, FileUploadFieldProps, InputFieldProps } from "@/types"
@@ -222,7 +222,7 @@ const UploadForm = () => {
               control={form.control}
               name="pdf"
               label="Book PDF File"
-              acceptTypes={[".pdf"]}
+              acceptTypes={ACCEPTED_PDF_TYPES}
               icon={Upload}
               placeholder="Click to upload PDF"
               hint="PDF file (max 50MB)"
@@ -233,7 +233,7 @@ const UploadForm = () => {
               control={form.control}
               name="coverImage"
               label="Cover Image (Optional)"
-              acceptTypes={["image/jpeg", "image/png", "image/webp"]}
+              acceptTypes={ACCEPTED_IMAGE_TYPES}
               icon={ImageIcon}
               placeholder="Click to upload cover image"
               hint="Leave empty to auto-generate from PDF"
