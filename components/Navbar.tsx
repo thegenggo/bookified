@@ -1,4 +1,3 @@
-
 "use client";
 import { cn } from "@/lib/utils";
 import Image from "next/image"
@@ -16,7 +15,7 @@ const Navbar = () => {
   const { user } = useUser();
 
   return (
-    <header className="w-full fixed z-50 bg-('--bg-primary')">
+    <header className="w-full fixed z-50 bg-(--bg-primary)">
       <div className="wrapper navbar-height py-4 flex justify-between items-center">
         <Link href="/" className="flex gap-0.5 items-center">
           <Image src="/assets/logo.png" alt="Bookified" width={42} height={26} />

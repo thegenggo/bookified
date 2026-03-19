@@ -233,7 +233,7 @@ const UploadForm = () => {
               control={form.control}
               name="coverImage"
               label="Cover Image (Optional)"
-              acceptTypes={["image/*"]}
+              acceptTypes={["image/jpeg", "image/png", "image/webp"]}
               icon={ImageIcon}
               placeholder="Click to upload cover image"
               hint="Leave empty to auto-generate from PDF"
