@@ -27,7 +27,7 @@ const HeroSection = () => {
               alt="Vintage books, globe and lamp"
               width={280}
               height={210}
-              className="object-contain"
+              className="object-contain w-auto"
               priority
             />
           </div>
@@ -45,7 +45,7 @@ const HeroSection = () => {
             alt="Vintage books, globe and lamp"
             width={340}
             height={255}
-            className="object-contain"
+            className="object-contain w-auto"
             priority
           />
         </div>

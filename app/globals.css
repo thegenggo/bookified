@@ -834,55 +834,22 @@
   z-index: 100 !important;
 }
 
-/* Clerk checkout/drawer PRIMARY button text color fix */
-.cl-drawerRoot .cl-formButtonPrimary,
-.cl-modalContent .cl-formButtonPrimary,
-.cl-checkoutForm .cl-formButtonPrimary,
-[data-clerk-component] button[class*='formButtonPrimary'] {
-  color: white !important;
-}
-
-/* Clerk checkout pay button - target primary/solid buttons */
+/* Clerk PRIMARY button text color fix */
+.cl-formButtonPrimary,
 button[class*='cl-formButtonPrimary'],
-button[class*='cl-button'][data-variant='solid'][data-color='primary'],
-button[class*='cl-button'][data-variant='solid'][data-color='primary'] *,
-.cl-main button[type='submit'][class*='formButtonPrimary'],
-.cl-footer button[class*='formButtonPrimary'] {
-  color: white !important;
-}
-
-/* Global Clerk portal/overlay PRIMARY button fix */
-[id^='cl-'] button[class*='formButtonPrimary'],
-[class^='cl-'] button[class*='formButtonPrimary'],
-.cl-modalBackdrop ~ div button[class*='formButtonPrimary'] {
-  color: white !important;
-}
-
-/* Force white text on Clerk PRIMARY buttons only (not segmented controls, tabs, etc.) */
-[class*='cl-'] button[class*='formButtonPrimary'],
-[class*='cl-'] button[class*='formButtonPrimary'] *,
-button[class*='cl-formButtonPrimary'],
-button[class*='cl-formButtonPrimary'] * {
+button[class*='cl-button'][data-variant='solid'][data-color='primary'] {
   color: white !important;
 }
 
 /* Ensure segmented controls, tabs, and other light buttons have dark text */
 .cl-segmentedControlButton,
-.cl-segmentedControlButton *,
 button[data-variant='unstyled'],
-button[data-variant='unstyled'] *,
-[class*='cl-segmentedControl'] button,
-[class*='cl-segmentedControl'] button *,
-.cl-tabButton,
-.cl-tabButton *,
-[role='tablist'] button,
-[role='tablist'] button * {
+.cl-tabButton {
   color: #212a3b !important;
 }
 
 /* Card sections have white background */
-.clerk-pricing-table-wrapper [class*='card'] > *,
-.clerk-pricing-table-wrapper > div > div > div > * {
+.clerk-pricing-table-wrapper [class*='card'] {
   background-color: white !important;
 }
 
@@ -928,9 +895,7 @@ button[data-variant='unstyled'] *,
 }
 
 /* Style the Active badge with better contrast */
-.cl-badge,
-.cl-pricingTableCard [class*='badge'],
-.cl-pricingTableCard span[class*='Badge'] {
+.cl-badge {
   background-color: #663820 !important;
   color: white !important;
   font-weight: 600 !important;
